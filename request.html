@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Request Project | MechServe</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+⚙️ Mech<span>Serve</span>
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="engineers.html">Engineers</a>
+<a href="dashboard.html">Dashboard</a>
+
+</nav>
+
+<a href="login.html" class="btn">
+Login
+</a>
+
+</header>
+
+
+<section class="form-page">
+
+<div class="form-container">
+
+<span>
+NEW PROJECT
+</span>
+
+<h1>
+Request a Mechanical
+Engineering Service
+</h1>
+
+<p>
+Tell us about your project.
+</p>
+
+
+<form onsubmit="submitProject(event)">
+
+
+<label>
+Project Name
+
+<input
+id="projectName"
+required
+placeholder="Example: Gear Housing Design"
+>
+
+</label>
+
+
+<label>
+Service Required
+
+<select id="service">
+
+<option>
+CAD Design
+</option>
+
+<option>
+3D Modelling
+</option>
+
+<option>
+3D Prototyping
+</option>
+
+<option>
+CNC & Fabrication
+</option>
+
+<option>
+FEA / CFD
+</option>
+
+<option>
+Reverse Engineering
+</option>
+
+</select>
+
+</label>
+
+
+<label>
+Project Description
+
+<textarea
+id="description"
+required
+placeholder="Describe your requirements..."
+></textarea>
+
+</label>
+
+
+<label>
+Estimated Budget
+
+<input
+type="number"
+id="budget"
+placeholder="₹ 10,000"
+required
+>
+
+</label>
+
+
+<label>
+Expected Deadline
+
+<input
+type="date"
+required
+>
+
+</label>
+
+
+<label>
+Upload Drawing / Reference
+
+<input
+type="file"
+>
+</label>
+
+
+<button class="btn full">
+Submit Project Request →
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Register | MechServe</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+<div class="auth-box wide">
+
+<a href="index.html"
+class="auth-logo">
+
+⚙️ Mech<span>Serve</span>
+
+</a>
+
+
+<h1>
+Create Your Account
+</h1>
+
+<p>
+Join the MechServe engineering community.
+</p>
+
+
+<div class="account-type">
+
+<button
+class="selected"
+onclick="selectAccount('customer')">
+
+👤 Customer
+
+</button>
+
+
+<button
+onclick="selectAccount('engineer')">
+
+👨‍🔧 Engineer
+
+</button>
+
+</div>
+
+
+<form onsubmit="registerUser(event)">
+
+
+<label>
+Full Name
+
+<input
+required
+placeholder="Your name"
+>
+
+</label>
+
+
+<label>
+Email
+
+<input
+type="email"
+required
+placeholder="you@example.com"
+>
+
+</label>
+
+
+<label>
+Phone
+
+<input
+required
+placeholder="+91 XXXXX XXXXX"
+>
+
+</label>
+
+
+<label>
+Password
+
+<input
+type="password"
+required
+placeholder="Create password"
+>
+
+</label>
+
+
+<div id="engineerFields"
+style="display:none">
+
+<label>
+Engineering Specialization
+
+<select>
+
+<option>
+Mechanical Design
+</option>
+
+<option>
+Manufacturing
+</option>
+
+<option>
+Automobile
+</option>
+
+<option>
+Robotics
+</option>
+
+<option>
+Thermal Engineering
+</option>
+
+</select>
+
+</label>
+
+
+<label>
+Experience
+
+<input
+placeholder="Example: 2 years"
+>
+
+</label>
+
+</div>
+
+
+<button class="btn full">
+Create Account →
+</button>
+
+
+</form>
+
+
+<p class="register-text">
+
+Already have an account?
+
+<a href="login.html">
+Login
+</a>
+
+</p>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
